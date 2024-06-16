@@ -88,7 +88,11 @@ export default function NotifcationTable({ data }: Props) {
                   </td>
                   <td className="px-6 py-4 whitespace-nowrap text-sm text-center text-gray-500">
                     {isManager && selected?.id === item.id ? (
-                      <select defaultValue={item.status} name="status">
+                      <select
+                        className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                        defaultValue={item.status}
+                        name="status"
+                      >
                         {Object.entries(NOTIFICATION_STAUS_MAP).map(
                           ([key, value]) => (
                             <option key={key} value={key}>
