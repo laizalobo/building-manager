@@ -69,7 +69,7 @@ export default function RegisterForm({ message }: Props) {
               />
             </label>
           </div>
-          {message && <p className="text-xs text-red-500 py-4">{message}</p>}v 8
+          {message && <p className="text-xs text-red-500 py-4">{message}</p>}
           <Button className="w-full" type="submit">
             Cadastrar
           </Button>
