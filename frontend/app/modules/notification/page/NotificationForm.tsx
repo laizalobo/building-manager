@@ -17,7 +17,7 @@ export default function RegisterForm({ message }: { message?: string }) {
               htmlFor="name"
               className="block text-sm font-medium text-gray-700"
             >
-              Messagem
+              Mensagem
               <textarea
                 id="name"
                 name="message"
